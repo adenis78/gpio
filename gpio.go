@@ -1,14 +1,18 @@
 package gpio
 
-import "log"
-import "io/ioutil"
-import "strconv"
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+	"log"
+	"strconv"
+)
 
-const LOW uint8 = 0
-const HIGH uint8 = 1
-const IN string = "in"
-const OUT string = "out"
+const (
+	LOW  uint8  = 0
+	HIGH uint8  = 1
+	IN   string = "in"
+	OUT  string = "out"
+)
 
 type GPIO_Pin struct {
 	number    uint8
