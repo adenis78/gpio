@@ -7,9 +7,11 @@
 
 package main
 
-import "fmt"
-import "time"
-import "github.com/adenis78/gpio"
+import (
+	"fmt"
+	"time"
+	"github.com/adenis78/gpio"
+)
 
 func main() {
 	fmt.Println("\nExample. Blink gpio43")
